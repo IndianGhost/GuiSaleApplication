@@ -1,0 +1,114 @@
+/*
+	Integration of Integration Glyphicons
+*/
+@import url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+/*
+	THE BEGINNING OF STYLE
+*/
+html, #PageBody{
+	background-color: #eceeef;
+}
+.container{
+	margin: 2%;
+}
+legend{
+	border-bottom: 1px outset;
+}
+#ButtonZone{
+	float: right;
+	margin-top: 1%;
+}
+#NewRecord input, #NameInput, select{
+	width: 100%;
+}
+.LeftRightBlockRows{
+	margin-top: 2%;
+}
+.NameRow{
+	margin-top: 1.5%;
+}
+#NewRecord{
+	border-top: 0px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 1.5% 3% 0 3%;
+}
+aside{
+	margin: 1.5% 3% 0 3%;
+	border: 1px solid #ccc;
+}
+aside h6{
+	background-color: skyblue;
+}
+.DownPart{
+	margin-top: 1.5%;
+}
+#NewRecord nav{
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 3%;
+}
+.nav li{
+	float: left;
+	padding: 0 2.5% 0 1%;
+	border: 1px solid rgba(0, 116, 217, 0.33);
+	border-bottom: 0px;
+	border-radius: 0 50% 0 0;
+	background-color: #eceeef;
+}
+.nav li:hover{
+	background-color: white; 
+}
+.nav a, .nav a:hover, .nav a:visited, .nav a:active, .nav a:focus{
+	text-decoration: none;
+}
+.active{
+	background-color: white !important;
+	border-bottom: 0px;
+	box-shadow: inset 0px 2px 3px 0px skyblue;/*#31708f;*/
+}
+input[type="checkbox"]{
+	max-width: 15px;
+	margin: 0 5%;
+}
+#general, .row{
+	margin-top: 1.5%;
+}
+@media (min-width: 768px){
+	.GrossProfit{
+		margin-left: 33.334%;
+	}
+	.Receipt{
+		margin-left: 12.5%;
+	}
+}
+/**********/
+#image{
+	margin: 5% 0;
+}
+#image img{
+	width: 100%;
+	height: 100%;
+}
+#image li{
+	list-style: none;
+}
+#image a{
+	margin: 15% 0;
+}
+/*****/
+.textZone{
+	border: 4px double lightgrey;
+}
+.textZone li{
+	list-style: none;
+	margin-top: 15%;
+}
+.textZone #Display{
+	font-size: x-large;
+	font-style: italic;
+}
+.textZone #YOUR_BUTTON{
+	font-weight: bold;
+	color: darkgray;
+}

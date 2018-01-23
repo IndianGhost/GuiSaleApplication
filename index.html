@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>INSERT YOUR TITLE HERE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="achraf bellaali" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- PERSONNAL STYLE -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+	<!-- Integration of bootstrap4 (Latest Version) -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- Integration of jQuery 3.1.1 (Latest Version) -->
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<script src="js/jquery-ui.js"></script>
+</head>
+<!-- THE BEGINNING OF BODY -->
+<body>
+
+<div id="PageBody">
+	
+	<div class="container">
+		<div id="ProductsForm">
+			<form method="" action="#">
+				<legend>Products</legend>
+				<!-- 
+					The attribute for="barcode" is used in the tag label
+					The attribute id="barcode" is used in the tag input
+					Question: Why?
+					Answer: When the visitor click on the label Barcode
+					the textField will be selected automatically
+					And that will be used in the rest of inputs
+					-->
+				<div class="row" id="LeftRightBlock">
+				<!-- This row contain left and right blocks-->
+
+			<!-- BEGINNING Left Block -->
+				<div class="col-lg-6">
+
+					<!-- Barcode -->
+					<div class="row LeftRightBlockRows"><!--This row contain barcode-->
+						<div class="col-lg-4">
+							<label for="barcode">Barcode</label>
+						</div>
+						<div class="col-lg-3">
+							<input type="text" name="" id="barcode" autofocus/>
+						</div>
+					</div><!--END row barcode-->
+
+					<!-- Category -->
+					<div class="row LeftRightBlockRows"><!-- BEGIN row Category -->
+						<div class="col-lg-4">
+							<label for="category">Category</label>
+						</div>
+						<div class="col-lg-8">
+							<select name="" id="category">
+								<option value="">option 1</option>
+								<option value="">option 2</option>
+							</select>
+						</div>
+					</div><!-- END row Category -->
+
+				</div>
+				<!-- END Left Block -->
+
+			<!-- BEGINNING Right Block -->
+				<div class="col-lg-6">
+
+				<!-- Buy Price -->
+				<div class="row LeftRightBlockRows"><!-- BEGIN row BuyPrice -->
+					<div class="col-lg-4">
+						<label for="BuyPrice">Buy Price</label>
+					</div>
+					<div class="col-lg-4">
+						<select id="BuyPrice" name="">
+							<option value="">option 1</option>
+							<option value="">option 2</option>
+						</select>
+					</div>
+					<div class="col-lg-4">
+						<input type="text" name=""/>
+					</div>
+				</div><!-- END row BuyPrice -->
+			
+				
+
+				<!-- Seel Price -->
+				<div class="row LeftRightBlockRows"><!-- BEGIN Sell Price -->
+					<div class="col-lg-4">
+						<label for="SellPrice">Sell Price</label>
+					</div>
+					<div class="col-lg-4">
+						<select id="SellPrice" name="">
+							<option value="">option 1</option>
+							<option value="">option 2</option>
+						</select>
+					</div>
+					<div class="col-lg-4">
+						<input type="text" name=""/>
+					</div>
+				</div><!-- END row Sell Price -->
+
+			</div>
+			<!-- END Right Block -->
+
+			</div><!-- END of the row which contain Right & left blocks-->
+			
+<!-- New row contain the label and the inputs of Name -->
+		<div class="row NameRow">
+				<!-- Name -->
+			<div class="col-lg-2">
+				<label for="name">Name</label>
+			</div>
+			<div class="col-lg-4">
+				<select id="name" name="">
+					<option value="">option 1</option>
+					<option value="">option 2</option>
+				</select>
+			</div>
+			<div class="col-lg-3">
+				<input type="text" id="NameInput" name=""/>
+			</div>
+		</div>
+			</form>
+		</div>
+		<div class="row">
+			<nav aria-label="..." id="ButtonZone" class="col-lg-offset-5 col-lg-7">
+  				<ul class="pagination">
+  					<li class="page-item">
+  						1/*
+  					</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-resize-vertical" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+						</a>
+    				</li>
+    				<li class="page-item">
+      					<a href="#" type="button" class="btn btn-default btn-md">
+  							<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+						</a>
+    				</li>
+    			</ul>
+			</nav>
+		</div><!-- END ButtonZone -->
+
+		<div class="row DownPart">
+			<aside class="col-lg-2">
+				<div class="row">
+					<h6 class="col-lg-12">xxx999-***</h6>
+				</div>
+				<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</aside>
+		<div id="NewRecord" class="col-lg-8">
+				<nav class="row" id="menu">
+  					<ul class="nav col-lg-12">
+  						<li class="active"><a href="#general">General</a></li><!--id="active"-->
+  						<li><a href="#stock">Stock</a></li>
+  						<li><a href="#image">Image</a></li>
+	  					<li><a href="#button">Button</a></li>
+  						<li><a href="#properties">Properties</a></li>
+  					</ul>
+  				</nav>
+  			<div class="container">
+    			
+    			<div id="general">
+    				<form method="" action="">
+     					<!-- Reference -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label for="reference">Reference</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" id="reference" name="">
+							</div>
+						</div>
+
+						<!-- Barcode -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Barcode</label>
+							</div>
+							<div class="col-lg-4">
+								<input type="text" name=""/>
+							</div>
+							<div class="col-lg-3">
+								<select name="">
+									<option value="">option 1</option>
+									<option value="">option 2</option>
+								</select>
+							</div>
+						</div>
+						<!-- Name -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Name</label>
+							</div>
+							<div class="col-lg-7">
+								<input type="text" name=""/>
+							</div>
+						</div>
+						<!-- Category -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Category</label>
+							</div>
+							<div class="col-lg-4">
+								<input type="text" name=""/>
+							</div>
+						</div>
+						<!-- Attributes -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Attributes</label>
+							</div>
+							<div class="col-lg-4">
+								<select name="">
+									<option value="">Option 1</option>
+									<option value="">Option 2</option>
+									<option value="">Option 3</option>
+								</select>
+							</div>
+							<div class="col-lg-3">
+								<label>Mandatory</label>
+								<input type="checkbox" name=""/>
+							</div>
+						</div>
+						<!-- Tax Category -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Tax Category</label>
+							</div>
+							<div class="col-lg-4">
+								<select name="">
+									<option value="">Option 1</option>
+									<option value="">Option 2</option>
+									<option value="">Option 3</option>
+								</select>
+							</div>
+						</div>
+						<!-- Sell Price +... -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Sell Price +...</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" name=""/>
+							</div>
+							<div class="col-lg-2">
+								<label>Sell Price</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" name=""/>
+							</div>
+							<div class="col-lg-2">
+								<label>Margin</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" name=""/>
+							</div>
+						</div>
+						<!-- Buy Price -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Buy Price</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" name=""/>
+							</div>
+							<div class="col-lg-2 GrossProfit">
+								<label>Gross Profit</label>
+							</div>
+							<div class="col-lg-2">
+								<input type="text" name=""/>
+							</div>
+						</div>
+						<!-- Text Tip Mess... -->
+						<div class="row">
+							<div class="col-lg-2">
+								<label>Text Tip Mess...</label>
+							</div>
+							<div class="col-lg-6">
+								<input type="text" name=""/>
+							</div>
+						</div>
+						<!-- Receipt Required for warranty -->
+						<div class="row">
+							<div class="col-lg-offset-2 Receipt">
+								<input type="checkbox" name=""/>
+								<label>Receipt Required for warranty</label>
+							</div>
+						</div>
+					</form>
+    			</div>
+
+    			<div id="stock"><!-- class="tab-pane fade">-->
+      				<form method="" action="">
+      					<!-- Include in Catalogue -->
+      					<div class="row">
+      						<div class="col-lg-3">
+      							<label>Include in Catalogue?</label>
+      						</div>
+      						<div class="col-lg-1">
+      							<input type="checkbox" name=""/>
+      						</div>
+      						<div class="col-lg-3">
+      							<label>Order in Catalogue</label>
+      						</div>
+      						<div class="col-lg-3">
+      							<input type="text" name=""/>
+      						</div>
+      					</div>
+      					<!-- Service Item -->
+      					<div class="row">
+      						<div class="col-lg-3">
+      							<label>Service Item</label>
+      						</div>
+      						<div class="col-lg-1">
+      							<input type="checkbox" name=""/>
+      						</div>
+      					</div>
+      					<!-- Auxiliary (Modifier)? -->
+      					<div class="row">
+      						<div class="col-lg-3">
+      							<label>Auxiliary (Modifier)?</label>
+      						</div>
+      						<div class="col-lg-1">
+      							<input type="checkbox" name=""/>
+      						</div>
+      						<div class="col-lg-3">
+      							<label>Stock Cost by Year</label>
+      						</div>
+      						<div class="col-lg-3">
+      							<input type="number" name=""/>
+      						</div>
+      					</div>
+      					<!-- Print to Remote Pinter -->
+      					<div class="row">
+      						<div class="col-lg-3">
+      							<label>Print to Remote Pinter</label>
+      						</div>
+      						<div class="col-lg-1">
+      							<input type="checkbox" name=""/>
+      						</div>
+      					</div>
+      					<!-- Variable Price Pro... -->
+      					<div class="row">
+      						<div class="col-lg-3">
+      							<label>Variable Price Pro...</label>
+      						</div>
+      						<div class="col-lg-1">
+      							<input type="checkbox" name=""/>
+      						</div>
+      						<div class="col-lg-6">
+      							<span>
+      								<strong>Minimum</strong> and <strong>Maximum</strong> product levels are maintained in <strong>Product Location</strong> along with Units Sold
+      							</span>
+      						</div>
+      					</div>
+      				</form>	
+    			</div>
+
+    				<div id="button"><!-- class="tab-pane fade">-->
+      					<div class="row">
+      						<div class="col-lg-12">
+      							<p>Sales screen Button HTML</p>
+      						</div>
+      						<div class="col-lg-11">
+      							<input type="text" name=""/>
+      						</div>
+      					</div>
+      					<div class="row">
+      						<center>
+      							<button>Click Me</button>
+      						</center>
+      					</div>
+      					<div class="row">
+      						<div class="col-lg-8">
+      							<p>
+      								You can customise Sales screen Product buttons here. If you have even alittle HTML knowledge you're more than halfway there!
+      							</p>
+      							
+      							<p>
+      								Hover over the text to your right to see the HTML code for the effect you want on your Button
+      							</p>
+      						</div>
+      						<div class="col-lg-4 textZone">
+      							<ul>
+      								<li>
+	      								<span id="Display">Display</span> TWO LINES <span id="YOUR_BUTTON">ON YOUR BUTTON</span>
+	      							</li>
+	      							<li>
+	      								<span style="color: blue;">
+	      									Text Colour
+	      								</span>
+	      							</li>
+	      							<li>
+	      								<span style="font-size: xx-large;">
+	      									Large Text
+	      								</span>
+	      							</li>
+	      							<li>
+	      								<span style="font-size: small;">
+	      									SMALL TEXT
+	      								</span>
+	      							</li>
+	      							<li>
+	      								<span style="font-style: italic;">
+	      									Italic Text
+	      								</span>
+	      							</li>
+	      							<li style="font-weight: bold;">
+	      								Bold Text
+	      							</li>
+      							</ul>
+      						</div>
+      					</div>
+				    </div>
+    				<div id="properties"><!-- class="tab-pane fade">-->
+      					<div class="row">
+      						<textarea class="col-lg-12"></textarea>
+      					</div>
+    				</div>
+  			</div><!-- END #NewRecord .container -->
+
+<!--
+ Image tab should be built after .container because we don't need margins on the left and right :) 
+-->
+				<div id="image"><!-- class="tab-pane fade">-->
+      					<div class="row">
+      						<div class="col-lg-10">
+      							<img src="images/demo.jpg" alt="It's an image"/>
+      						</div>
+      						<div class="col-lg-1">
+      							<nav aria-label="..." id="ButtonZone" class="col-lg-offset-5 col-lg-7">
+  									<ul class="pagination">
+    									<li class="page-item">
+      										<a href="#" type="button" class="btn btn-default btn-md">
+  												<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+											</a>
+    									</li>
+    									<li class="page-item">
+      										<a href="#" type="button" class="btn btn-default btn-md">
+  												<span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>
+											</a>
+    									</li>
+    									<li class="page-item">
+      										<a href="#" type="button" class="btn btn-default btn-md">
+  												<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+											</a>
+    									</li>
+      									<li class="page-item">
+      										<span type="button" class="btn btn-default btn-sm">
+      											100%
+      										</span>
+      									</li>
+      									<li class="page-item">
+      										<a href="#" type="button" class="btn btn-default btn-md">
+  												<span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>
+											</a>
+    									</li>
+      								</ul>
+      							</nav>
+      						</div>
+      					</div>
+   					</div>
+				
+
+				<script type="text/javascript">
+					$( function() {
+    					$( "#NewRecord" ).tabs();
+  					} );
+				</script>
+		</div><!-- END #NewRecord -->
+		</div><!-- END .row -->
+	</div><!-- THE END OF .container -->
+
+</div><!-- THE END OF #PageBody -->
+<script type="text/javascript">
+	$('#menu > ul.nav li').click(function(e){
+		$('.nav li.active').removeClass('active');
+		var $this = $(this);
+		if (!$this.hasClass('active')) {
+			$this.addClass('active');
+		}
+		e.preventDefault;
+	})
+</script>
+</body>
+</html>
